@@ -1,0 +1,13 @@
+price = 0
+while True:
+    a = input("enter the price of the items or write enter to end the program =")
+    if a == "enter":
+        print("thanks for using the calculator")
+        break
+    else:
+        try:
+            price+=int(a)
+        except:
+            print("please enter the price to calculate the total of the numbers")
+            continue
+print(f"the total pricing is = {price}")            
